@@ -269,7 +269,7 @@ static const CGFloat MarginLeft = 20.0f;
 
 - (void)setImageCropRect:(CGRect)imageCropRect
 {
-    [self resetCropRect];
+    [self resetCropRectAnimated:YES];
     
     CGRect scrollViewFrame = self.scrollView.frame;
     CGSize imageSize = self.image.size;
